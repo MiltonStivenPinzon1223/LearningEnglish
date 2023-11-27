@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Learning English</string>
+    <string name="btnRegister">Registrarse</string>
+    <string name="btnLogin">Iniciar sesión</string>
+    <string name="etMail">Correo electrónico</string>
+    <string name="etPass">Contraseña</string>
+    <string name="etName">Nombre</string>
+    <string name="tvLogros">Logros</string>
+    <string name="tvRacha">Racha</string>
+    <string name="tvLearn">Aprendido</string>
+    <string name="etCPass">Confirmar Contraseña</string>
+    <string-array name="spinner_items">
+        <item>English</item>
+    </string-array>
+    <string name="tvCategories">Progreso en Categoría</string>
+    <string name="tvCategory1">Categoría 1</string>
+    <string name="tvCategory2">Categoría 2</string>
+    <string name="tvCategory3">Categoría 3</string>
+    <string name="tvCategory4">Categoría 4</string>
+    <string name="tvCategory5">Categoría 5</string>
+    <string name="tvPractice">Practica</string>
+    <string name="btnOp1">Opción 1</string>
+    <string name="btnOp2">Opción 2</string>
+    <string name="btnOp3">Opción 3</string>
+    <string name="tvWord">Palabra</string>
+    <string name="tvProgress">Progreso</string>
+    <string name="tvCategory">Categoría</string>
+    <string name="tvWords">Palabras Aprendidas</string>
+    <string name="tvUser">Usuario</string>
+    <string name="tvWelcome">Bienvenido [username],¿Estás listo para aprender inglés?</string>
+    <string name="btnStart">Empezar a aprender</string>
+    <string name="tvNotify">Notificaciones</string>
+    <string name="btnDone">Siguiente</string>
+    <string name="btnTry">Reintentar</string>
+    <string name="btnChange">Cambiar de palabra</string>
+</resources>
