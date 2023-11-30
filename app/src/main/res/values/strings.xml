@@ -9,8 +9,9 @@
     <string name="tvRacha">Racha</string>
     <string name="tvLearn">Aprendido</string>
     <string name="etCPass">Confirmar Contraseña</string>
-    <string-array name="spinner_items">
-        <item>English</item>
+    <string-array name="options">
+        <item>User</item>
+        <item>Admin</item>
     </string-array>
     <string name="tvCategories">Progreso en Categoría</string>
     <string name="tvCategory1">Categoría 1</string>
@@ -33,4 +34,6 @@
     <string name="btnDone">Siguiente</string>
     <string name="btnTry">Reintentar</string>
     <string name="btnChange">Cambiar de palabra</string>
+    <string name="edit">Editar</string>
+    <string name="cerrarSesión">Cerrar sesión</string>
 </resources>

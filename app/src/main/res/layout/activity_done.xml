@@ -45,6 +45,8 @@
                 android:id="@+id/btn1"
                 android:layout_width="72dp"
                 android:layout_height="72dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="User"
                 android:src="@drawable/useri"/>
         </LinearLayout>
 
@@ -59,6 +61,8 @@
                 android:id="@+id/btn2"
                 android:layout_width="72dp"
                 android:layout_height="72dp"
+                android:contentDescription="learn"
+                android:background="@android:color/transparent"
                 android:src="@drawable/learn" />
         </LinearLayout>
 
@@ -73,6 +77,8 @@
                 android:id="@+id/btn3"
                 android:layout_width="72dp"
                 android:layout_height="72dp"
+                android:contentDescription="home"
+                android:background="@android:color/transparent"
                 android:src="@drawable/home" />
         </LinearLayout>
 
@@ -85,8 +91,10 @@
 
             <ImageButton
                 android:id="@+id/btn4"
-                android:layout_width="72dp"
+                android:background="@android:color/transparent"
+                android:layout_width="68dp"
                 android:layout_height="72dp"
+                android:contentDescription="Progress"
                 android:src="@drawable/progress" />
         </LinearLayout>
     </LinearLayout>
