@@ -38,77 +38,88 @@
             android:id="@+id/btnV"
             android:layout_width="202dp"
             android:layout_height="202dp"
+            android:contentDescription="voice"
             android:src="@drawable/voice"/>
         <ImageButton
             android:id="@+id/btnP"
             android:layout_width="102dp"
             android:layout_height="102dp"
             android:layout_marginTop="20dp"
+            android:contentDescription="word"
+            android:background="@android:color/transparent"
             android:src="@drawable/pencil"/>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginTop="16dp">
+            android:orientation="vertical"
+            android:gravity="center">
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <ImageButton
-                    android:id="@+id/btn1"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:src="@drawable/useri"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <ImageButton
-                    android:id="@+id/btn2"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:src="@drawable/learn" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <ImageButton
-                    android:id="@+id/btn3"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:src="@drawable/home" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <ImageButton
-                    android:id="@+id/btn5"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:src="@drawable/progress" />
-            </LinearLayout>
+            <ImageButton
+                android:id="@+id/btn1"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="User"
+                android:src="@drawable/useri"/>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn2"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:contentDescription="learn"
+                android:background="@android:color/transparent"
+                android:src="@drawable/learn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn3"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:contentDescription="home"
+                android:background="@android:color/transparent"
+                android:src="@drawable/home" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn4"
+                android:background="@android:color/transparent"
+                android:layout_width="68dp"
+                android:layout_height="72dp"
+                android:contentDescription="Progress"
+                android:src="@drawable/progress" />
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>

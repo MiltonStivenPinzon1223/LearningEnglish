@@ -15,25 +15,52 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"/>
 
-    <TextView
-        android:id="@+id/tvName"
+    <EditText
+        android:id="@+id/etName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/etName"
+        android:hint="@string/etName"
         android:textSize="24sp"
         android:layout_below="@id/tvUser"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"/>
 
-    <TextView
-        android:id="@+id/tvMail"
+    <EditText
+        android:id="@+id/etMail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/etMail"
+        android:hint="@string/etMail"
         android:textSize="24sp"
-        android:layout_below="@id/tvName"
+        android:layout_below="@id/etName"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"/>
+
+    <Spinner
+        android:id="@+id/tUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:entries="@array/options" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit"
+        android:layout_below="@id/tUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/btnOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cerrarSesión"
+        android:layout_below="@id/btnSubmit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -52,60 +79,68 @@
         android:gravity="center"
         android:layout_marginTop="16dp">
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
 
-                <ImageButton
-                    android:id="@+id/btn1"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:src="@drawable/useri"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <ImageButton
-                    android:id="@+id/btn2"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:src="@drawable/learn" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <ImageButton
-                    android:id="@+id/btn3"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:src="@drawable/home" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <ImageButton
-                    android:id="@+id/btn4"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:src="@drawable/progress" />
-            </LinearLayout>
+            <ImageButton
+                android:id="@+id/btn1"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="User"
+                android:src="@drawable/useri"/>
         </LinearLayout>
-    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn2"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:contentDescription="learn"
+                android:background="@android:color/transparent"
+                android:src="@drawable/learn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn3"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:contentDescription="home"
+                android:background="@android:color/transparent"
+                android:src="@drawable/home" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn4"
+                android:background="@android:color/transparent"
+                android:layout_width="68dp"
+                android:layout_height="72dp"
+                android:contentDescription="Progress"
+                android:src="@drawable/progress" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
