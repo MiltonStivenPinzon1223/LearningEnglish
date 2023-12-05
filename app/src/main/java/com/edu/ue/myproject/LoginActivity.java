@@ -70,7 +70,6 @@ public class LoginActivity extends AppCompatActivity {
                         alertView("Error de credenciales");
                     }
                 }
-
                 @Override
                 public void onFailure(Call<ResponseCredentials> call, Throwable t) {
                     Log.i("respoonse",t.getMessage());
