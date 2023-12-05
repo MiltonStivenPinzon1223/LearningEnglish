@@ -1,8 +1,17 @@
-package com.edu.ue.myproject.api.model;
+package com.edu.ue.myproject.model;
 
 public class Auth {
     private String use_password;
     private String use_email;
+    private String use_token;
+
+    public String getUse_token() {
+        return use_token;
+    }
+
+    public void setUse_token(String use_token) {
+        this.use_token = use_token;
+    }
 
     public String getUse_password() {
         return use_password;

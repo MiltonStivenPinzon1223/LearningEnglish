@@ -1,27 +1,24 @@
-package com.edu.ue.myproject.api.model;
+package com.edu.ue.myproject.model;
 
 import java.util.ArrayList;
 
 public class ResponseCredentials {
-    private ArrayList<Credentials> credencials;
-    private String mensaje;
+    private String token;
+    private String msg;
 
-    public ResponseCredentials() {
+    public String getToken() {
+        return token;
     }
 
-    public ArrayList<Credentials> getCredencials() {
-        return credencials;
+    public void setToken(String token) {
+        this.token = token;
     }
 
-    public void setCredencials(ArrayList<Credentials> credencials) {
-        this.credencials = credencials;
+    public String getMsg() {
+        return msg;
     }
 
-    public String getMensaje() {
-        return mensaje;
-    }
-
-    public void setMensaje(String mensaje) {
-        this.mensaje = mensaje;
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 }

@@ -1,31 +1,22 @@
-package com.edu.ue.myproject.api.model;
+package com.edu.ue.myproject.model;
 
 public class Credentials {
-    private String use_identifier;
-    private String use_key;
-    private String use_id;
+    private String use_email;
+    private String use_password;
 
-    public String getUse_identifier() {
-        return use_identifier;
+    public String getUse_email() {
+        return use_email;
     }
 
-    public void setUse_identifier(String use_identifier) {
-        this.use_identifier = use_identifier;
+    public void setUse_email(String use_email) {
+        this.use_email = use_email;
     }
 
-    public String getUse_key() {
-        return use_key;
+    public String getUse_password() {
+        return use_password;
     }
 
-    public void setUse_key(String use_key) {
-        this.use_key = use_key;
-    }
-
-    public String getUse_id() {
-        return use_id;
-    }
-
-    public void setUse_id(String use_id) {
-        this.use_id = use_id;
+    public void setUse_password(String use_password) {
+        this.use_password = use_password;
     }
 }
