@@ -2,5 +2,5 @@ package com.edu.ue.myproject.api;
 
 public interface ValuesApi {
     //IP de Stiven
-    String BASE_URL = "http://10.57.31.49/LE/public/api/";
+    String BASE_URL = "http://192.168.0.9/LE/public/api/";
 }

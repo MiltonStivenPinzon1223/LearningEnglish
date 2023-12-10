@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F7F7F7">
+    android:background="@color/bgPrimary">
 
     <!-- Image -->
     <ImageView
@@ -28,9 +28,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:backgroundTint="#27AE60"
+            android:backgroundTint="@color/btnPrimary"
             android:text="@string/btnLogin"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/text"
             android:textSize="18sp" />
 
         <!-- Register Button -->
@@ -39,9 +39,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:backgroundTint="#27AE60"
+            android:backgroundTint="@color/btnSecondary"
             android:text="@string/btnRegister"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/text"
             android:textSize="18sp" />
 
     </LinearLayout>

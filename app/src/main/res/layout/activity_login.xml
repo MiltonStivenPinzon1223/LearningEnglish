@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bgPrimary"
     android:padding="10dp"
     tools:context=".LoginActivity">
 
@@ -54,7 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/EtPass"
-            android:backgroundTint="#27AE60"
+            android:backgroundTint="@color/btnPrimary"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="50dp"
@@ -67,7 +68,7 @@
         <!-- Register Button -->
         <Button
             android:id="@+id/btnRegister"
-            android:backgroundTint="#27AE60"
+            android:backgroundTint="@color/btnSecondary"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="50dp"
             android:textSize="18sp"

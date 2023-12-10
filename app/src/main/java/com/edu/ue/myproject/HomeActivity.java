@@ -1,50 +1,57 @@
 package com.edu.ue.myproject;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
+import android.view.MenuItem;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 public class HomeActivity extends AppCompatActivity {
+
+    HomeFragment homeFragment = new HomeFragment();
+    ProgressFragment progressFragment = new ProgressFragment();
+    PracticeFragment practiceFragment = new PracticeFragment();
+    UserFragment userFragment = new UserFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        ImageButton btn1 = findViewById(R.id.btn1);
-        ImageButton btn2 = findViewById(R.id.btn2);
-        ImageButton btn3= findViewById(R.id.btn3);
-        ImageButton btn4 = findViewById(R.id.btn4);
+        BottomNavigationView navigation = findViewById(R.id.bottom_navigation);
+        selecc(navigation);
+        loadFragment(homeFragment);
+    }
+    public void loadFragment(Fragment fr){
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame_container,fr);
+        transaction.commit();
 
-        btn1.setOnClickListener(new View.OnClickListener() {
+    }
+    private void selecc(BottomNavigationView navigation){
+        navigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), User.class);
-                startActivity(intent);
-            }
-        });
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Practice.class);
-                startActivity(intent);
-            }
-        });
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-                startActivity(intent);
-            }
-        });
-        btn4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Progress.class);
-                startActivity(intent);
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int id = item.getItemId();
+                if (id == R.id.homeFragment){
+                    loadFragment(homeFragment);
+                    return true;
+                } else if (id == R.id.progresoFragment) {
+                    loadFragment(progressFragment);
+                    return true;
+                } else if (id == R.id.practicaFragment) {
+                    loadFragment(practiceFragment);
+                    return true;
+                } else if (id == R.id.perfilFragment) {
+                    loadFragment(userFragment);
+                    return true;
+                }
+                return false;
             }
         });
     }

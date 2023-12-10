@@ -34,6 +34,8 @@
     <string name="btnDone">Siguiente</string>
     <string name="btnTry">Reintentar</string>
     <string name="btnChange">Cambiar de palabra</string>
-    <string name="edit">Editar</string>
+    <string name="edit">Editar Datos</string>
     <string name="cerrarSesión">Cerrar sesión</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

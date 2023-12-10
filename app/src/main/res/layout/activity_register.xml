@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
+    android:background="@color/bgPrimary"
     tools:context=".MainActivity">
 
     <!-- Image -->
@@ -84,7 +85,7 @@
             android:layout_marginStart="50dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="50dp"
-            android:backgroundTint="#27AE60"
+            android:backgroundTint="@color/btnPrimary"
             android:textSize="18sp"
             android:text="@string/btnRegister"
             android:textColor="#FFFFFF" />
@@ -100,7 +101,7 @@
             android:layout_marginStart="50dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="50dp"
-            android:backgroundTint="#27AE60"
+            android:backgroundTint="@color/btnSecondary"
             android:textSize="18sp"
             android:onClick="Login"
             android:text="@string/btnLogin" />

@@ -14,54 +14,5 @@ public class Wrong extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wrong);
-        ImageButton btn1 = findViewById(R.id.btn1);
-        ImageButton btn2 = findViewById(R.id.btn2);
-        ImageButton btn3= findViewById(R.id.btn3);
-        ImageButton btn4 = findViewById(R.id.btn4);
-        Button btnTry= findViewById(R.id.btnTry);
-        Button btnChange = findViewById(R.id.btnChange);
-
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), User.class);
-                startActivity(intent);
-            }
-        });
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Practice.class);
-                startActivity(intent);
-            }
-        });
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-                startActivity(intent);
-            }
-        });
-        btn4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Progress.class);
-                startActivity(intent);
-            }
-        });
-        btnTry.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Progress.class);
-                startActivity(intent);
-            }
-        });
-        btnChange.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Progress.class);
-                startActivity(intent);
-            }
-        });
     }
 }

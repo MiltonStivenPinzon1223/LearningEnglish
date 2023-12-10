@@ -25,23 +25,20 @@
             android:name=".PracticeV"
             android:exported="false" />
         <activity
-            android:name=".Notify"
-            android:exported="false" />
-        <activity
             android:name=".User"
-            android:exported="false" />
-        <activity
-            android:name=".Progress"
             android:exported="false" />
         <activity
             android:name=".Practice"
             android:exported="false" />
         <activity
-            android:name=".Categories"
-            android:exported="false" />
-        <activity
             android:name=".HomeActivity"
-            android:exported="false" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
@@ -50,12 +47,8 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
