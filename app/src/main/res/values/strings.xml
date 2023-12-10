@@ -28,7 +28,8 @@
     <string name="tvCategory">Categoría</string>
     <string name="tvWords">Palabras Aprendidas</string>
     <string name="tvUser">Usuario</string>
-    <string name="tvWelcome">Bienvenido [username],¿Estás listo para aprender inglés?</string>
+    <string name="tvUserupdate">Datos personales:</string>
+    <string name="tvWelcome">Bienvenido...</string>
     <string name="btnStart">Empezar a aprender</string>
     <string name="tvNotify">Notificaciones</string>
     <string name="btnDone">Siguiente</string>
