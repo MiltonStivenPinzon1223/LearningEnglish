@@ -17,7 +17,9 @@ public class HomeActivity extends AppCompatActivity {
     HomeFragment homeFragment = new HomeFragment();
     ProgressFragment progressFragment = new ProgressFragment();
     PracticeFragment practiceFragment = new PracticeFragment();
+    MicroFragment microFragment = new MicroFragment();
     UserFragment userFragment = new UserFragment();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +33,6 @@ public class HomeActivity extends AppCompatActivity {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.frame_container,fr);
         transaction.commit();
-
     }
     private void selecc(BottomNavigationView navigation){
         navigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -49,6 +50,9 @@ public class HomeActivity extends AppCompatActivity {
                     return true;
                 } else if (id == R.id.perfilFragment) {
                     loadFragment(userFragment);
+                    return true;
+                } else if (id == R.id.microFragment) {
+                    loadFragment(microFragment);
                     return true;
                 }
                 return false;

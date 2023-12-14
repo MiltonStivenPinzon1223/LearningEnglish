@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bgPrimary"
     android:padding="16dp">
 
     <ImageView
@@ -40,76 +41,4 @@
         android:text="@string/btnChange"
         android:textColor="#FFFFFF" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="16dp">
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <ImageButton
-                android:id="@+id/btn1"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:background="@android:color/transparent"
-                android:contentDescription="User"
-                android:src="@drawable/useri"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <ImageButton
-                android:id="@+id/btn2"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:contentDescription="learn"
-                android:background="@android:color/transparent"
-                android:src="@drawable/learn" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <ImageButton
-                android:id="@+id/btn3"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:contentDescription="home"
-                android:background="@android:color/transparent"
-                android:src="@drawable/home" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <ImageButton
-                android:id="@+id/btn4"
-                android:background="@android:color/transparent"
-                android:layout_width="68dp"
-                android:layout_height="72dp"
-                android:contentDescription="Progress"
-                android:src="@drawable/progress" />
-        </LinearLayout>
-    </LinearLayout>
 </RelativeLayout>

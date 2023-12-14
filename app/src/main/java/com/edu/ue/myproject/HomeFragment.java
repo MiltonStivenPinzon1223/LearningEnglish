@@ -2,12 +2,11 @@ package com.edu.ue.myproject;
 
 import static com.edu.ue.myproject.api.ValuesApi.BASE_URL;
 
-import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,13 +26,15 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
-import android.content.Intent;
+
 public class HomeFragment extends Fragment {
     public Retrofit retrofit;
     public List<Users> UsersList;
     public ResponseUsers responseUsers;
     public TextView tvWelcome;
     public Button btnStart;
+
+    PracticeFragment practiceFragment = new PracticeFragment();
 
     public HomeFragment() {
         // Required empty public constructor
@@ -53,7 +54,6 @@ public class HomeFragment extends Fragment {
         getUser();
         return view;
     }
-
 
     public void getUser(){
         retrofit = ClienteRetrofit.getClient(BASE_URL);

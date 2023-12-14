@@ -6,10 +6,88 @@
     android:background="@color/bgPrimary"
     tools:context=".PracticeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/bgSecondary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCategories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/tvPractice"
+                android:textColor="@color/text"
+                android:textSize="48sp" />
+
+
+            <TextView
+                android:id="@+id/tvWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCategories"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="@string/tvWord"
+                android:textColor="@color/text"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvWord"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BtnOp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/btnPrimary"
+                android:text="@string/btnOp1"
+                android:textColor="@color/text" />
+
+            <Button
+                android:id="@+id/BtnOp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/btnPrimary"
+                android:text="@string/btnOp2"
+                android:textColor="@color/text" />
+
+            <Button
+                android:id="@+id/BtnOp3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/btnPrimary"
+                android:text="@string/btnOp3"
+                android:textColor="@color/text" />
+
+            <ImageButton
+                android:id="@+id/btnV"
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="User"
+                android:src="@drawable/voicei" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 </FrameLayout>

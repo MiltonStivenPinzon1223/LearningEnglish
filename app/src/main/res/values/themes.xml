@@ -5,11 +5,11 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/btnPrimary</item>
-        <item name="colorPrimaryVariant">@color/btnSecondary</item>
+        <item name="colorPrimaryVariant">@color/text</item>
         <item name="colorOnPrimary">@color/btnPrimary</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/bgPrimary</item>
-        <item name="colorSecondaryVariant">@color/bgSecondary</item>
+        <item name="colorSecondaryVariant">@color/text</item>
         <item name="colorOnSecondary">@color/bgPrimary</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
@@ -18,7 +18,7 @@
 
     <style name="BottomNavigation">
         <item name="android:background">@color/btnPrimary</item>
-        <item name="itemIconTint">@color/btnSecondary</item>
+        <item name="itemIconTint">@color/text</item>
         <item name="itemTextColor">@color/btnPrimary</item>
     </style>
 

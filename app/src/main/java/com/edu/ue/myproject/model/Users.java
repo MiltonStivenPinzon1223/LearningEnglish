@@ -18,6 +18,10 @@ public class Users {
         this.rol_id = user.get(0).rol_id;
     }
 
+    public Users() {
+
+    }
+
     public String getUse_password() {
         return use_password;
     }

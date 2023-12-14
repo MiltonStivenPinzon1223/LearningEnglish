@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
                             goTo();
                         }
                     }else{
-                        alertView("Error de credenciales");
+                        alertView("Error de credenciales"+response.body());
                     }
                 }
                 @Override

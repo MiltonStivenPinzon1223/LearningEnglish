@@ -15,6 +15,13 @@
         android:title="@string/tvPractice">
     </item>
     <item
+        android:id="@+id/microFragment"
+        android:icon="@drawable/voicei"
+        android:tooltipText="@string/tvPractice"
+        android:contentDescription="Practicas"
+        android:title="@string/tvPractice">
+    </item>
+    <item
         android:id="@+id/progresoFragment"
         android:icon="@drawable/progress"
         android:tooltipText="Perfil"
